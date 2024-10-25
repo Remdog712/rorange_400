@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hover-animate {
+            transition: transform 0.3s ease;
+        }
+        .hover-animate:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+        .svg-container {
+            margin: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainTitle">Remington Orange</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="svg.html">SVG</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="svg-container">
+            <h2>Animating SVG</h2>
+
+                <h3>SVG-Only Animation</h3>
+                <p>Faux Loading Screen with just animate</p>
+                <svg width="100" height="100">
+                    <circle cx="10" cy="50" r="10" fill="orange">
+                        <animate attributeName="cx" values="10; 90; 10" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+
+            <h3>CSS Hover Animation</h3>
+            <p>Faux hover button effect with SVG and CSS</p>
+            <svg width="100" height="100">
+                <rect width="50" height="50" x="25" y="25" fill="orange" class="hover-animate" />
+            </svg>
+        </section>
+    </main>
+</body>
+</html>

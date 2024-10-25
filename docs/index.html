@@ -8,17 +8,44 @@
 </head>
 <body>
     <header>
-        <h1>Remington Orange</h1>
+        <h1 id="mainTitle">Remington Orange</h1>
         <nav>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <a href="svg.html">SVG</a>
     </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am <span class="name">Remington Orange</span>. I am a <span class="hobby">developer</span> and <span class ="hobby">designer</span> with a background in various disciplines. I currently reside in <span class="place">Pennsylvania</span> and enjoy <span class="hobby">creating digital projects</span> that blend creativity with technology.</p>
+        <p>In my freetime I find peace in <span class="hobby">taking pictures</span>, <span class="hobby">creating 3D assets</span>, and <span class="hobby">video production</span>. I currently go to <span class="place">Penn State Behrend</span> for an anticipated major in Digital Media, Arts, and Technology.</p>
+    
+        <fieldset>
+            <legend>Highlight Options:</legend>
+            <label>
+                <input type="checkbox" id="highlightNamesCheckbox"> Name
+            </label>
+            <label>
+                <input type="checkbox" id="highlightPlacesCheckbox"> Places
+            </label>
+            <label>
+                <input type="checkbox" id="highlightHobbyCheckbox"> Things I Do
+            </label>
+        </fieldset>
+    </section>
 
     <section id="testing-js">
         <h2>Testing JavaScript</h2>
-        <p>This is a section to test JavaScript functionality.</p>
+        <p id="toggleTextParagraph">This is a section to test JavaScript functionality.</p>
+        
+        <label>
+            <input type="checkbox" id="toggleColorCheckbox"> Toggle Name Color
+        </label>
+        
+        <label>
+            <input type="checkbox" id="removeTextCheckbox"> Toggle Remove Text 
+        </label>
+        
         <button id="fontColorButton">Change Font Color</button>
         <button id="hightlightbutton">Highlight The Paragraph</button>
         <button id="bgColorButton">Change Background Color</button>
@@ -27,4 +54,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
